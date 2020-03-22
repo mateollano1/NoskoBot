@@ -7,7 +7,7 @@ route.get('/controllers', sendControllers);
 
 // route.get('/saludar/:name', Handcontroller.saludar);
 
-// route.get('/levantarManos', Handcontroller.levantarManos)
+route.post('/move/handsup', Handcontroller.handsUp)
 
 route.post('/move/hand', Handcontroller.move)
 
