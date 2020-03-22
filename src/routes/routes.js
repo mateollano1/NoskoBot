@@ -1,11 +1,15 @@
 var express = require('express');
-// const app = express()
-var controller = require("../controllers/controller")
+var Handcontroller = require("../controllers/HandController")
+var { sendControllers } = require("../controllers/controller")
 var route = express.Router();
 
-route.get('/saludar/:name', controller.saludar);
+route.get('/controllers', sendControllers);
 
-route.get('/levantarManos', controller.levantarManos)
+// route.get('/saludar/:name', Handcontroller.saludar);
+
+// route.get('/levantarManos', Handcontroller.levantarManos)
+
+route.post('/move/hand', Handcontroller.move)
 
 module.exports = {
     route
