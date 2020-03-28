@@ -10,6 +10,7 @@ route.get('/controllers', sendControllers);
 route.post('/move/handsup', Handcontroller.handsUp)
 
 route.post('/move/hand', Handcontroller.move)
+route.post('/move/whereisbaby', Handcontroller.whereIsBaby)
 
 module.exports = {
     route

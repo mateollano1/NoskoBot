@@ -105,6 +105,9 @@ invertConsole = (value) => {
     }
     return res
 }
+whereIsBaby = () =>{
+
+}
 move = (req, res) => {
     let id = req.body.id
     let value = req.body.value
@@ -148,6 +151,8 @@ module.exports = {
     // saludar,
     // levantarManos,
     move,
-    handsUp
+    handsUp,
+    whereIsBaby
+
 
 }
